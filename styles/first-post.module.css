@@ -1,0 +1,10 @@
+.wrapper {
+  background: red;
+  border: 1px solid black;
+}
+.wrapper .x {
+  color: blue !important;
+}
+.content {
+  padding: 10px;
+}
