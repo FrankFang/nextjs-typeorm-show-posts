@@ -22,7 +22,7 @@ const index: NextPage<Props> = (props) => {
   return (
     <div>
       <h1>你的浏览器是 {browser.name}</h1>
-      <h2>你的浏览器窗口大小是 {width} 像素</h2>
+    <h2>你的浏览器窗口12345大小是 {width} 像素</h2>
     </div>
   );
 };
