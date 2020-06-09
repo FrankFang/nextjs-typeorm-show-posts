@@ -1,9 +1,7 @@
 import {GetServerSideProps, NextPage} from 'next';
 import {UAParser} from 'ua-parser-js';
 import {useEffect, useState} from 'react';
-import {createConnection, getConnection} from 'typeorm';
 import {getDatabaseConnection} from '../lib/getDatabaseConnection';
-console.log('执行了 index.tsx')
 
 type Props = {
   browser: {
@@ -22,7 +20,7 @@ const index: NextPage<Props> = (props) => {
   return (
     <div>
       <h1>你的浏览器是 {browser.name}</h1>
-    <h2>你的浏览器窗口12345大小是 {width} 像素</h2>
+    <h2>你的浏览器窗口大小是 {width} 像素</h2>
     </div>
   );
 };
