@@ -11,7 +11,7 @@ const index: NextPage<Props> = (props) => {
   const {posts} = props;
   return (
     <div>
-      {posts.map(post => <div>{post.title}</div>)}
+      {posts.map(post => <div key={post.id}>{post.title}</div>)}
     </div>
   );
 };
